@@ -34,7 +34,7 @@ while not crashed:
     mjImgrev = pygame.image.load(mjrevlist[w1])
     gameDisplay.fill(white)
     pygame.display.flip()
-    #pygame.draw.circle(gameDisplay,white,[x+130,y+50],250)
+    #pygame.draw.circle(gameDisplay,white,[x+130,y+50],200)
     if(xchange==5):
         gameDisplay.blit(mjImg,(x,y))
 
@@ -45,7 +45,7 @@ while not crashed:
     x+=xchange
     w1+=1
 
-    if(x>1200 or x<0):
+    if(x>1000 or x<0):
         xchange=xchange*-1
 
     if(w1>9):
